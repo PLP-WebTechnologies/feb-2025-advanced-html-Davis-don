@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        .image-container {
+            width: 100%;
+            height: 30rem;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overall-container">
+        <header>
+            <h1>Navigation Links</h1>
+            <ol type="I">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+                <li>Billings</li>
+            </ol>  
+        </header>
+
+        <main>
+
+            <!-- External Image from Pexels -->
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg" alt="Children playing">
+            </div>
+
+            <!-- Contact Table -->
+            <div class="table-section">
+                <h1 style="text-align:center;">Contact Table</h1>
+                <table width="100%" border="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>789 Oak St</td>
+                            <td>+1122334455</td>
+                            <td>alice@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Smith</td>
+                            <td>456 Maple Ave</td>
+                            <td>+2233445566</td>
+                            <td>michael@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Brown</td>
+                            <td>987 Pine Rd</td>
+                            <td>+3344556677</td>
+                            <td>sarah@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>David Wilson</td>
+                            <td>321 Birch Blvd</td>
+                            <td>+4455667788</td>
+                            <td>david@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Emma Davis</td>
+                            <td>159 Cedar Ln</td>
+                            <td>+5566778899</td>
+                            <td>emma@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Registration Form -->
+
+            <form>
+                <fieldset>
+                    <legend>Registration Form</legend>
+            <form style="width: 100%;" action="#" method="post">
+                <label for="name">Name</label><br/>
+                <input type="text" id="name" name="name" placeholder="John Doe" required><br/>
+
+                <label for="email">Email</label><br/>
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required><br/>
+
+                <label for="password">Password</label><br/>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br/>
+
+                <label for="dob">Date of Birth</label><br/>
+                <input type="date" id="dob" name="dob" required><br/>
+
+                <label for="county">Select County</label><br/>
+                <select id="county" name="county" required>
+                    <option value="">-- Select County --</option>
+                    <option value="Nyeri">Nyeri</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Nyandarua">Nyandarua</option>
+                    <option value="Murang'a">Murang'a</option>
+                </select><br/>
+
+                <h3>Favourite Color</h3>
+                <input type="radio" id="red" name="color" value="red" required>
+                <label for="red">Red</label>
+
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Blue</label>
+
+                <input type="radio" id="green" name="color" value="green">
+                <label for="green">Green</label><br/>
+
+                <h3>Your Hobbies</h3>
+                <input type="checkbox" id="reading" name="hobby" value="reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="sports" name="hobby" value="sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="music" name="hobby" value="music">
+                <label for="music">Music</label><br/>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+                </fieldset>
+        </main>
+    </div>
+
+</body>
+</html>
